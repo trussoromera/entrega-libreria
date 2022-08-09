@@ -85,6 +85,7 @@ function borrar_producto(e){
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.isConfirmed) {
+            abuelo.remove();
           Swal.fire(
             'Deleted!',
             'Your file has been deleted.',
@@ -92,7 +93,7 @@ function borrar_producto(e){
           )
         }
       })
-    abuelo.remove();
+    
     
 
 }
